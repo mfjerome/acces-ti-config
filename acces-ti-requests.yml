@@ -1,0 +1,22 @@
+Logging: 
+  IncludeScopes: false
+  LogLevel: 
+    Default: Information
+    System: Information
+    Microsoft: Information
+spring:
+  cloud:
+    discovery:
+      registrationMethod: route
+eureka:
+  instance:
+    securePort: 443
+    nonSecurePortEnabled: false
+    securePortEnabled: true
+    healthCheckUrlPath: /health
+  client:
+    securePortEnabled: true
+    shouldRegisterWithEureka: true
+    registerWithEureka: true
+    shouldFetchRegistry: false
+    fetchRegistry: false

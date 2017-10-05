@@ -1,0 +1,21 @@
+Logging: 
+  IncludeScopes: false
+  LogLevel: 
+    Default: Debug
+    System: Debug
+    Microsoft: Debug
+spring:
+  cloud:
+    discovery:
+      registrationMethod: route
+eureka:
+  instance:
+    nonSecurePortEnabled: false
+    securePortEnabled: true
+    securePort: 443
+  client:
+    securePortEnabled: true
+    shouldRegisterWithEureka: true
+    registerWithEureka: true
+    shouldFetchRegistry: true
+    fetchRegistry: true

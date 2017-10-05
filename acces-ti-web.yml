@@ -1,0 +1,22 @@
+Logging: 
+  IncludeScopes: false
+  LogLevel: 
+    Default: Information
+    System: Information
+    Microsoft: Information
+spring:
+  cloud:
+    discovery:
+      registrationMethod: route
+eureka:
+  client:
+    securePortEnabled: true
+    shouldRegisterWithEureka: false
+    registerWithEureka: false
+    shouldFetchRegistry: true
+    fetchRegistry: true
+SpaSettings:
+  Services: acces-ti-requests;acces-ti-orders
+  BackgroundColor: "#fff"
+  OrderingEnabled: true
+  WelcomeMessage: Pivotal says welcome!
